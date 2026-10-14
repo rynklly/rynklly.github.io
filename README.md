@@ -3,6 +3,7 @@
 
 
 #About Me
+
 My name is Ryan Kelly and I am an undergraduate student at the University of Washington Tacoma. I will be graduating in Spring 2027 with a B.S Mathematics and a B.A. Computer Science. My passions are problem-solving and helping others learn. My goal is to earn a PhD in Mathematics and become a Professor of Mathematics.
 
 #Projects
