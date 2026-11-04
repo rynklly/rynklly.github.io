@@ -16,6 +16,7 @@
   <div class="wrap header-inner">
     <a class="name" href="#top">Ryan Kelly</a>
     <nav aria-label="Sections">
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
@@ -32,16 +33,33 @@
     <h1>Ryan Kelly</h1>
     <p class="tagline">Mathematics &amp; Computer Science · University of Washington Tacoma</p>
     <p>
-      I'm an undergraduate at the University of Washington Tacoma, finishing a B.S. in Mathematics
-      and a B.A. in Computer Science and Systems in June 2027. What I enjoy most is solving hard
-      problems and helping other people learn. My research is in computational statistics, and I
-      lead weekly calculus workshops on campus. I'm applying to graduate programs in mathematics
-      with the goal of teaching mathematics at the college level.
+      I'm an undergraduate at the University of Washington Tacoma studying mathematics and
+      computer science. What I enjoy most is solving hard problems and helping other people learn.
     </p>
     <p class="hero-links">
       <a class="button" href="cv.pdf">CV (PDF)</a>
       <a class="button ghost" href="mailto:ryan@ryan-kelly.net">Email</a>
       <a class="button ghost" href="https://github.com/rynklly">GitHub</a>
+    </p>
+  </section>
+
+  <!-- ===================================================== ABOUT -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I'm finishing a B.S. in Mathematics and a B.A. in Computer Science and Systems at the
+      University of Washington Tacoma, graduating in June 2027. My coursework runs from abstract
+      algebra to algorithms.
+    </p>
+    <p>
+      Teaching is where I want to build my career. As a peer facilitator for UW Tacoma's Calculus
+      Collaborative Learning Seminar, I plan and lead twice-weekly workshops and write the
+      worksheets we work through. Helping someone get to those "a-ha!" moments is the part of
+      mathematics I enjoy most.
+    </p>
+    <p>
+      I'm applying to graduate programs for Fall 2027, with the goal of teaching mathematics at the
+      college level. In my free time, I'm usually hiking, gaming, or planning my next trip.
     </p>
   </section>
 
@@ -64,7 +82,15 @@
         its sampler.
       </p>
       <p class="status">Manuscript in preparation.</p>
-      <ul class="tags"><li>Probability</li><li>Computational statistics</li><li>Python</li></ul>
+      <div class="learn">
+        <h4>Challenges and key learnings</h4>
+        <ul>
+          <li><strong>Challenge:</strong> the defect wasn't visible in the code, only in the data it produced. Finding it meant running controlled simulations where the theory predicted the answer before each run.</li>
+          <li><strong>Learning:</strong> validation has to run through the tool the paper describes, so I ported my method into the engine's own Python sampler instead of validating it on a separate copy.</li>
+          <li><strong>Learning:</strong> be exact about what's new. Other methods can hit the same targets, and saying plainly that this one adds a known generating model made the work stronger, not weaker.</li>
+        </ul>
+      </div>
+      <ul class="tags"><li>Python</li><li>NumPy</li><li>SciPy</li><li>R</li><li>LaTeX</li></ul>
       <!-- Add when available:
       <p class="links"><a href="https://github.com/rynklly/REPO">Code</a></p>
       -->
@@ -77,6 +103,14 @@
         Original worksheets and solution keys I write for the Calculus Collaborative Learning
         Seminar, built around group problem-solving in twice-weekly workshops.
       </p>
+      <div class="learn">
+        <h4>Challenges and key learnings</h4>
+        <ul>
+          <li><strong>Challenge:</strong> writing problems a group can work through together, ordered so each one builds on the last and surfaces misconceptions early.</li>
+          <!-- LEARNING: Ryan to add in his own words -->
+        </ul>
+      </div>
+      <ul class="tags"><li>LaTeX</li></ul>
       <!-- WORKSHEETS: put PDFs in the materials/ folder, then uncomment this list and add one line per file.
       <ul class="files">
         <li><a href="materials/integration-by-parts-1-worksheet.pdf">Integration by parts</a> <span class="sub">· <a href="materials/integration-by-parts-1-key.pdf">key</a></span></li>
@@ -94,7 +128,20 @@
         geocoded addresses to fill in the MLS area, so users never need to know it. The app runs in
         Streamlit.
       </p>
-      <ul class="tags"><li>Regression</li><li>scikit-learn</li><li>Streamlit</li></ul>
+      <figure>
+        <img src="images/housing-residuals.png" width="1389" height="490" loading="lazy"
+             alt="Two panels: residuals plotted against fitted log prices, scattered evenly around zero, and a histogram of residuals centered at zero.">
+        <figcaption>Residuals of the final LassoCV model on the log price scale.</figcaption>
+      </figure>
+      <div class="learn">
+        <h4>Challenges and key learnings</h4>
+        <ul>
+          <li><strong>Challenge:</strong> cutting 190 columns of MLS data down to features a homeowner could actually enter.</li>
+          <li><strong>Challenge:</strong> location was the strongest predictor, but few people know their MLS area. Geocoding the address and predicting the area with KNN solved that.</li>
+          <li><strong>Learning:</strong> LassoCV matched the full model's accuracy while dropping 23 terms, and a simpler model is easier to deploy and explain.</li>
+        </ul>
+      </div>
+      <ul class="tags"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>Streamlit</li><li>Jupyter</li></ul>
       <p class="links"><a href="https://github.com/rynklly/tacoma-home-price-estimator">Code and notebook</a></p>
     </article>
   </section>
@@ -149,8 +196,10 @@
     <h2>Skills</h2>
     <dl class="skills">
       <dt>Scientific computing</dt><dd>Python (NumPy, SciPy), R — root-finding, simulation, validation</dd>
+      <dt>Data science</dt><dd>pandas, scikit-learn, Jupyter, Streamlit</dd>
       <dt>Programming</dt><dd>Java, C/C++, MATLAB, SQL</dd>
       <dt>Tools</dt><dd>Git, LaTeX</dd>
+      <dt>Coursework</dt><dd>Abstract Algebra I–II, Foundations of Mathematical Reasoning, Applied Data Science, Data Structures and Algorithms, Theory of Computation, Operating Systems, Software Engineering</dd>
     </dl>
   </section>
 
