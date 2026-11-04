@@ -1,41 +1,18 @@
-# Welcome to My Portfolio
+# rynklly.github.io
 
+Personal academic site for Ryan Kelly, served by GitHub Pages at <https://rynklly.github.io>.
 
+Plain HTML and CSS, no build step. Edit `index.html` for content and `style.css` for appearance; changes go live a minute or two after you push.
 
-#About Me
+## Files
 
-My name is Ryan Kelly and I am an undergraduate student at the University of Washington Tacoma. I will be graduating in Spring 2027 with a B.S Mathematics and a B.A. Computer Science. My passions are problem-solving and helping others learn. My goal is to earn a PhD in Mathematics and become a Professor of Mathematics.
+- `index.html` — the page (About, Projects, Experience, Skills, Contact)
+- `style.css` — styling, with automatic dark mode
+- `cv.pdf` — public CV (the phone number is left off; the application CV has it)
+- `materials/` — teaching worksheets and keys (PDFs)
+- `.nojekyll` — tells GitHub Pages to serve files as-is
 
-#Projects
+## Adding a worksheet
 
-Moment and SNR matching in normal distributions under truncation
-
-Calculus Collaborative Learning Worksheets
-
-Tacoma Housing Price Predictor
-
-
-#Skills
-
-
-#Experience
-
-Calculus Collaborative Learning Seminar Peer Facilitator -- University of Washington Tacoma -- Spring 2026-Present
-
-Undergraduate Research Assistant -- University of Washington Tacoma -- Summer 2026
-
-Private Physics Tutor -- Self-employed -- Summer-Fall 2025
-
-Property Management -- Self-employed -- 2011-2025
-
-Research Experience for Undergraduates -- University of Washington Seattle -- Summer 2011
-
-Physics and Chemistry Tutor -- Green River College -- Winter 2010-Spring 2011
-
-
-#CV
-
-
-#Contact
-ryankellyseattle@gmail.com
-github.com/rynklly
+1. Put the PDF(s) in `materials/`.
+2. In `index.html`, find the `WORKSHEETS` comment in the worksheets card, uncomment the `<ul class="files">` list, and add one line per worksheet.
