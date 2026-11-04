@@ -1,6 +1,6 @@
 # rynklly.github.io
 
-Personal academic site for Ryan Kelly, served by GitHub Pages at <https://rynklly.github.io>.
+Personal academic site for Ryan Kelly, served by GitHub Pages at <https://ryan-kelly.net> (custom domain; rynklly.github.io redirects here).
 
 Plain HTML and CSS, no build step. Edit `index.html` for content and `style.css` for appearance; changes go live a minute or two after you push.
 
